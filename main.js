@@ -14,8 +14,6 @@ function init(){
         document.getElementById("book7").style.display = "none";
         document.getElementById("book8").style.display = "none";
         document.getElementById("book9").style.display = "none";
-        document.getElementById("book10").style.display = "none";
-        document.getElementById("book11").style.display = "none";
     });
 }
 
@@ -50,9 +48,7 @@ function bookedApp(){
     let expert = document.getElementById("pickoneExpert");
     let time = document.getElementById("pickoneTime");
     let comment = document.getElementById("comment");
-    let day = document.getElementById("pickoneDay");
-    let month = document.getElementById("pickoneMonth");
-    let year = document.getElementById("pickoneYear");
+    let date = document.getElementById("pickoneDate");
 
     arr.push(fname.value)
     arr.push(lname.value);
@@ -61,9 +57,7 @@ function bookedApp(){
     arr.push(service.options[service.selectedIndex].text);
     arr.push(expert.options[expert.selectedIndex].text);
     arr.push(time.options[time.selectedIndex].text);
-    arr.push(day.options[day.selectedIndex].text);
-    arr.push(month.options[month.selectedIndex].text);
-    arr.push(year.options[year.selectedIndex].text);
+    arr.push(date.options[date.selectedIndex].text);
 
     document.getElementById("confirmation").style.display = "block";
     addText(arr);
@@ -89,8 +83,6 @@ function bookedApp(){
         document.getElementById("book7").style.display = "block";
         document.getElementById("book8").style.display = "block";
         document.getElementById("book9").style.display = "block";
-        document.getElementById("book10").style.display = "block";
-        document.getElementById("book11").style.display = "block";
         document.getElementById("confirmation").style.display = "none";
     });
    arr = []
@@ -112,7 +104,7 @@ function addText(){
     insertCustomer.innerHTML += arr[0] + " " + arr[1] + "<br>";
     insertCustomer.innerHTML += arr[2] + "<br>";
     insertCustomer.innerHTML += arr[3] + "<br>";
-    insertDate.innerHTML += arr[8] + " " + arr[7] + ", " + arr[9] + " @ " + arr[6];
+    insertDate.innerHTML += arr[7] + ", 2022 @ " + arr[6];
     insertService.innerHTML += arr[4];
     insertExpert.innerHTML += arr[5];  
 }
