@@ -76,16 +76,38 @@ function bookedApp(){
         showAlert.classList = "alert alert-danger";
         //document.getElementById("bookApp").disabled = true;
     });
+
+    let resApp = document.getElementById("resApp");
+    resApp.addEventListener("click", function(){
+        document.getElementById("bookApp").style.display = "block";
+        document.getElementById("book1").style.display = "block";
+        document.getElementById("book2").style.display = "block";
+        document.getElementById("book3").style.display = "block";
+        document.getElementById("book4").style.display = "block";
+        document.getElementById("book5").style.display = "block";
+        document.getElementById("book6").style.display = "block";
+        document.getElementById("book7").style.display = "block";
+        document.getElementById("book8").style.display = "block";
+        document.getElementById("book9").style.display = "block";
+        document.getElementById("book10").style.display = "block";
+        document.getElementById("book11").style.display = "block";
+    });
+   arr = []
 }
 
 
 function addText(){
     console.log(arr)
+    document.getElementById("insertService").innerHTML = "";
+    document.getElementById("insertCustomer").innerHTML = "";
+    document.getElementById("insertDate").innerHTML = "";
+    document.getElementById("insertExpert").innerHTML = "";
+
     let insertService = document.getElementById("insertService");
     let insertCustomer = document.getElementById("insertCustomer");
     let insertDate = document.getElementById("insertDate");
     let insertExpert = document.getElementById("insertExpert");
-
+    
     insertCustomer.innerHTML += arr[0] + " " + arr[1] + "<br>";
     insertCustomer.innerHTML += arr[2] + "<br>";
     insertCustomer.innerHTML += arr[3] + "<br>";
@@ -93,28 +115,6 @@ function addText(){
     insertService.innerHTML += arr[4];
     insertExpert.innerHTML += arr[5];  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
