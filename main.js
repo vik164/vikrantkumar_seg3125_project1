@@ -73,7 +73,7 @@ function bookedApp(){
     let cancelApp = document.getElementById("cancelApp");
     cancelApp.addEventListener("click", function(){
         let confirmTitle = document.getElementById("confirmTitle");
-        confirmTitle.innerHTML = `<img src="/Images/wrong.png" alt="check" height="50" width="50"></img>` + "Booking Canceled";
+        confirmTitle.innerHTML = `<img src="/vikrantkumar_seg3125_project1/Images/wrong.png" alt="check" height="50" width="50"></img>` + "Booking Canceled";
         let showAlert = document.getElementById("showAlert");
         showAlert.classList = "alert alert-danger";
         document.getElementById("bookApp").disabled = true;
