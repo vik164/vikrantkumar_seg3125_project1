@@ -74,7 +74,7 @@ function bookedApp(){
         confirmTitle.innerHTML = `<img src="/vikrantkumar_seg3125_project1/Images/wrong.png" alt="check" height="50" width="50"></img>` + "Booking Canceled";
         let showAlert = document.getElementById("showAlert");
         showAlert.classList = "alert alert-danger";
-        //document.getElementById("bookApp").disabled = true;
+        document.getElementById("resApp").disabled = true;
     });
 
     let resApp = document.getElementById("resApp");
@@ -91,6 +91,7 @@ function bookedApp(){
         document.getElementById("book9").style.display = "block";
         document.getElementById("book10").style.display = "block";
         document.getElementById("book11").style.display = "block";
+        document.getElementById("confirmation").style.display = "none";
     });
    arr = []
 }
