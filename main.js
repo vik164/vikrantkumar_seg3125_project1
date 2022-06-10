@@ -4,9 +4,21 @@ function init(){
     let book_app = document.getElementById("bookApp");
     book_app.addEventListener("click", function(){
         bookedApp();
-
+        document.getElementById("bookApp").style.display = "none";
+        document.getElementById("book1").style.display = "none";
+        document.getElementById("book2").style.display = "none";
+        document.getElementById("book3").style.display = "none";
+        document.getElementById("book4").style.display = "none";
+        document.getElementById("book5").style.display = "none";
+        document.getElementById("book6").style.display = "none";
+        document.getElementById("book7").style.display = "none";
+        document.getElementById("book8").style.display = "none";
+        document.getElementById("book9").style.display = "none";
+        document.getElementById("book10").style.display = "none";
+        document.getElementById("book11").style.display = "none";
     });
 }
+
 
 function init_contact(){
     let submit = document.getElementById("submitForm");
@@ -24,10 +36,10 @@ function init_contact(){
         document.getElementById("con4").style.display = "none";
         document.getElementById("con5").style.display = "none";
         document.getElementById("con6").style.display = "none";
-        document.getElementById("con7").style.display = "none";
-
+        document.getElementById("submitForm").style.display = "none";
     });
 }
+
 
 function bookedApp(){
     let fname = document.getElementById("firstname");
@@ -52,22 +64,8 @@ function bookedApp(){
     arr.push(day.options[day.selectedIndex].text);
     arr.push(month.options[month.selectedIndex].text);
     arr.push(year.options[year.selectedIndex].text);
-    
-    // fname.value ="";
-    // lname.value ="";
-    // phone_number.value ="";
-    // email.value ="";
-    // service.value ="";
-    // expert.value ="";
-    // time.value ="";
-    // comment.value =""
-    // day.value = ""
-    // month.value = ""
-    // year.value = "2022"
-    console.log(arr)
 
     document.getElementById("confirmation").style.display = "block";
-    document.getElementById("bookApp").disabled = true;
     addText(arr);
 
     let cancelApp = document.getElementById("cancelApp");
@@ -76,12 +74,9 @@ function bookedApp(){
         confirmTitle.innerHTML = `<img src="/vikrantkumar_seg3125_project1/Images/wrong.png" alt="check" height="50" width="50"></img>` + "Booking Canceled";
         let showAlert = document.getElementById("showAlert");
         showAlert.classList = "alert alert-danger";
-        document.getElementById("bookApp").disabled = true;
+        //document.getElementById("bookApp").disabled = true;
     });
-    
 }
-
-
 
 
 function addText(){
@@ -96,14 +91,8 @@ function addText(){
     insertCustomer.innerHTML += arr[3] + "<br>";
     insertDate.innerHTML += arr[8] + " " + arr[7] + ", " + arr[9] + " @ " + arr[6];
     insertService.innerHTML += arr[4];
-    insertExpert.innerHTML += arr[5];
-
-    
+    insertExpert.innerHTML += arr[5];  
 }
-
-
-
-
 
 
 
