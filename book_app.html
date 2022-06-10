@@ -8,46 +8,43 @@
     <script src = "main.js"></script>
     <title>Book Appointment</title>
 </head>
+
 <body style="height:100%; display:flex; flex-direction: column;" onload="init()">
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd; border: 1px solid #000; margin-bottom: 25; font-size: 17;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html"  style="padding-left: 140px; font-size: xx-large;">
+        <a class="navbar-brand" href="/vikrantkumar_seg3125_project1/"  style="padding-left: 140px; font-size: xx-large;">
           <strong> Always Smiling Dental Clinic</strong>
-          <img  id="smile" src="/Images/smile.png" alt="smile" height="70" width="70">
+          <img  id="smile" src="/vikrantkumar_seg3125_project1/Images/smile.png" alt="smile" height="70" width="70">
         </a>
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse justify-content-end align center" id="mainNavbar" style="padding-right: 140px;">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="/index.html" style="display:inline-block; padding: 16px 25px; color: #000;"><strong> Home </strong> </a>
+              <a class="nav-link" href="/vikrantkumar_seg3125_project1/index.html" style="display:inline-block; padding: 16px 25px; color: #000;">
+                <strong> Home </strong> 
+              </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="/services.html" style="display:inline-block; padding: 16px 25px; color: #000;"><strong>Services </strong></a>
+              <a class="nav-link" href="/vikrantkumar_seg3125_project1/services.html" style="display:inline-block; padding: 16px 25px; color: #000; "> <strong> Services </strong> </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="/team.html" style="display:inline-block; padding: 16px 25px;  color: #000;"><strong> Team </strong></a>
+              <a class="nav-link" href="/vikrantkumar_seg3125_project1/team.html" style="display:inline-block; padding: 16px 25px;  color: #000; "> <strong> Team </strong> </a>
+            </li>   
+            <li class="nav-item">
+              <a class="nav-link" href="/vikrantkumar_seg3125_project1/contact.html" style="display:inline-block; padding: 16px 25px; color: #000;"> <strong> Contact Us </strong> </a>
             </li>
-            
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html" style="display:inline-block; padding: 16px 25px; color: #000;"><strong> Contact Us </strong></a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="/book_app.html" style="display:inline-block; padding: 16px 25px; border: 1px solid #000;  margin-left: 10; background-color: #0d6efd; color: #e3f2fd; border-radius: 5px"><strong> Book Appointment </strong></a>
+              <a class="nav-link" href="/vikrantkumar_seg3125_project1/book_app.html" style="display:inline-block; padding: 16px 25px; border: 1px solid #000;  margin-left: 10; background-color: #0d6efd; color: #e3f2fd; border-radius: 5px"><strong> Book Appointment </strong></a>
             </li>
           </form>
         </div>
       </div>
     </nav>
 
-    <!--Contact -->
+    <!--Book Appointment -->
     <h1 style="text-align:center ;">Book an Appointment</h1>
     <div class="my-4 p-4 text-dark" style="background-color: #e3f2fd;">
         <div class="container">
@@ -58,7 +55,6 @@
                         <label for="firstname">First Name</label>
                     </div>
                 </div>
-
                 <div class="col-md-3 p-2">
                     <div class="form-floating">
                         <input type="text" class="form-control" id="lastname" placeholder=" ">
@@ -74,7 +70,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="row justify-content-center" >
                 <div class="col-md-6 p-2">
                     <div class="form-floating">
@@ -83,9 +78,6 @@
                     </div>
                 </div>
             </div>
-
-
-
             <div class="row justify-content-center">
                 <div class="col-md-3 p-2">
                     <div class="form-floating">
@@ -102,7 +94,6 @@
                         <label for="pickoneService">Service/Reason</label>
                     </div>
                 </div>
-
                 <div class="col-md-3 p-2">
                     <div class="form-floating">
                         <select class="form-select" name="pickoneExpert" id="pickoneExpert">
@@ -116,7 +107,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="row justify-content-center" >
                 <div class="col-md-1 p-2">
                   <div class="form-floating">
@@ -134,7 +124,6 @@
                     <label for="pickoneYear">Year</label>
                   </div>
                 </div>
-
                 <div class="col-md-1 p-2">
                   <div class="form-floating">
                     <select class="form-select" name="pickoneMonth" id="pickoneMonth">
@@ -155,7 +144,6 @@
                     <label for="pickoneMonth">Month</label>
                   </div>
                 </div>
-
                 <div class="col-md-1 p-2">
                   <div class="form-floating">
                     <select class="form-select" name="pickoneDay" id="pickoneDay">
@@ -194,9 +182,7 @@
                     </select>
                     <label for="pickoneDay">Day</label>
                   </div>
-                </div>
-
-                 
+                </div>           
                 <div class="col-md-3 p-2">
                     <div class="form-floating">
                         <select class="form-select" name="pickoneTime" id="pickoneTime">
@@ -212,11 +198,8 @@
                         </select>
                         <label for="pickoneTime">Time</label>
                     </div>
-                </div>
-
-                
+                </div>          
             </div>
-
             <div class="row justify-content-center" >
                 <div class="col-md-6 p-2">
                     <div class="form-floating">
@@ -233,11 +216,12 @@
                 </button>
             </div>
 
+            <!--Confirm-->
             <div class="container-lg-5" style="display: none;" id="confirmation">
               <div class="row justify-content-center">
                 <div class="alert alert-success" id="showAlert" style="width:50%;">
                   <h4 class="alert-header" id="confirmTitle">
-                    <img id="confirmImage" src="/Images/check.png" alt="check" height="50" width="50">
+                    <img id="confirmImage" src="/vikrantkumar_seg3125_project1/Images/check.png" alt="check" height="50" width="50">
                     Your Appointment has Been Confirmed!
                   </h4>
                   <div class="container">
@@ -250,16 +234,13 @@
                       <div class="col-md-5 p-1">
                         <h6>Date & Time:</h6>
                         <p id="insertDate"></p>
-                      </div>
-                      
+                      </div>   
                     </div>
-      
                     <div class="row p-2 justify-content-between">
                       <div class="col-md-5 p-1">
                         <h6>Service/Reason:</h6>
                         <p id="insertService"></p>
                       </div>
-      
                       <div class="col-md-5 p-1">
                         <h6>Expert:</h6>
                         <p id="insertExpert"></p>
@@ -275,22 +256,17 @@
                   <button class="btn-lg btn-light bg-primary text-light col-md-5 p-3" id="cancelApp" style="text-align: center; margin-bottom:5">
                     Cancel Appointment 
                   </button> 
-                  
-              </div>
-
+                </div>
               <div class="row justify-content-center">
-                <a href="/book_app.html" style="text-align: center; width: 85%;">
+                <a href="/vikrantkumar_seg3125_project1/book_app.html" style="text-align: center; width: 85%;">
                   <button class="btn-lg btn-light bg-primary text-light col-md-6 p-3 " id="bookAnotherApp" style="text-align: center;  margin-bottom:5;">
                    Book Another Appointment 
                  </button>
               </a>
               </div>
             </div>
-
-            
         </div>
     </div>
-
 </body>
 
 <!-- Footer -->
@@ -309,22 +285,20 @@
           </p>
         </div>
       </div>
-
       <div class="col-md-4 my-1">
         <div class="p-5 text-light" style="text-align: center;  background-color: black">
-          <a href="https://www.instagram.com/"><img class="img-fluid " height="50" width="50" style="margin: 10;" src="/Images/insta.png" alt="instagram"></a>
-          <a href="https://www.twitter.com/"><img class="img-fluid" height="50" width="50" style="margin: 10;" src="/Images/twitter.png" alt="twitter"></a>
-          <a href="https://www.facebook.com/"><img class="img-fluid" height="50" width="50" style="margin: 10;" src="/Images/facebook.png" alt="facebook"></a>
+          <a href="https://www.instagram.com/"><img class="img-fluid " height="50" width="50" style="margin: 10;" src="/vikrantkumar_seg3125_project1/Images/insta.png" alt="instagram"></a>
+          <a href="https://www.twitter.com/"><img class="img-fluid" height="50" width="50" style="margin: 10;" src="/vikrantkumar_seg3125_project1/Images/twitter.png" alt="twitter"></a>
+          <a href="https://www.facebook.com/"><img class="img-fluid" height="50" width="50" style="margin: 10;" src="/vikrantkumar_seg3125_project1/Images/facebook.png" alt="facebook"></a>
         </div>
       </div>
-
       <div class="col-md-4 my-1">
         <div class="p-5 text-light" style="text-align: center;  background-color: black">
           <h1 style="font-size: 30; color:#e5f4fe; text-align: center;">Site Map</h1>
-          <a href="/index.html" >Home</a> <br>
-          <a href="/services.html">Services</a> <br>
-          <a href="/team.html" >Team</a> <br>
-          <a href="/contact.html" >Contact Us</a> <br>
+          <a href="/vikrantkumar_seg3125_project1/index.html" >Home</a> <br>
+          <a href="/vikrantkumar_seg3125_project1/services.html">Services</a> <br>
+          <a href="/vikrantkumar_seg3125_project1/team.html" >Team</a> <br>
+          <a href="/vikrantkumar_seg3125_project1/contact.html" >Contact Us</a> <br>
         </div>
       </div>
   </div>
